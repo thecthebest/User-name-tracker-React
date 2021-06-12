@@ -1,4 +1,4 @@
-import classes from "AddUser.module.css";
+import classes from "./AddUser.module.css";
 import Card from "../UI/Card";
 function AddUser() {
     const addUserHandler = (event) => {
