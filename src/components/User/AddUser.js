@@ -21,9 +21,9 @@ function AddUser() {
       <Card className={classes.input}>
         <form onSubmit={addUserHandler}>
           <label htmlFor="username">Username</label>
-          <input id="username" type="text" onChange={usernameChangeHandler}/>
+          <input id="username" type="text" value={enteredUsername} onChange={usernameChangeHandler}/>
           <label htmlFor="userage">Age</label>
-          <input id="userage" type="number" />
+          <input id="userage" value={enteredAge} onChange={ageChangeHandler} type="number" />
           <Button type="submit" onChange={ageChangeHandler}>Add USer</Button>
         </form>
       </Card>
