@@ -2,7 +2,7 @@ import classes from "./AddUser.module.css";
 import Button from "../UI/Button";
 import Card from "../UI/Card";
 import ErrorModal from "../UI/ErrorModal";
-import { useState } from "react";
+import { useState, Fragment } from "react";
 function AddUser(props) {
   const [enteredUsername, setEnteredUsername] = useState('');
   const [enteredAge, setEnteredAge] = useState('');
@@ -43,7 +43,7 @@ function AddUser(props) {
     };
 
   return (
-    <div>
+    <Fragment>
       {error && <ErrorModal title={error.title} onConfirm={errorHandler} message={error.message} />}
       <Card className={classes.input}>
         <form onSubmit={addUserHandler}>
@@ -54,7 +54,7 @@ function AddUser(props) {
           <Button type="submit" onChange={ageChangeHandler}>Add USer</Button>
         </form>
       </Card>
-    </div>
+    </Fragment>
   );
 }
 
