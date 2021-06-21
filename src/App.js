@@ -2,7 +2,7 @@ import { useState, Fragment } from 'react';
 import './App.css';
 import AddUser from './components/User/AddUser';
 import UserList from './components/User/UserList';
-
+// Render Add user and users list
 function App() {
   const [userList, setUserList] = useState([]);
   const addUserHandler = (user) => {

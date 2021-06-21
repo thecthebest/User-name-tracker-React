@@ -1,4 +1,5 @@
 import classes from "./Button.module.css";
+// Render reusable button
 function Button(props) {
 
   return (

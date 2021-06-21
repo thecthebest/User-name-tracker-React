@@ -1,6 +1,6 @@
 import Card from '../UI/Card';
 import classes from './UserList.module.css';
-
+// Render each user
 function UserList(props) {
 
     return (

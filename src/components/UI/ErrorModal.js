@@ -2,6 +2,7 @@ import classes from "./ErrorModal.module.css";
 import Card from "./Card";
 import Button from "./Button";
 import { Fragment } from "react";
+// Render modal
 function ErrorModal(props) {
     return (
         <Fragment>
